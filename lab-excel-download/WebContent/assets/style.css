@@ -1,0 +1,430 @@
+body {
+	background: #3e3e3e;
+}
+.start{
+	display:flex;
+	flex-direction: row;
+	position: absolute;
+	font-family: Nunito Sans;
+	font-style: normal;
+	color: #FFFFFF;
+	left: 190px;
+}
+.heading {
+	width: 680px;
+	height: 65px;
+	top: 126px;	
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 65px;
+	position: absolute;
+	color:white;
+	    margin: 0px 0px 0px 180px;
+}
+
+.para {
+	width: 1060px;
+	height: 100px;
+	top: 232px;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	position: absolute;
+	color:white;
+	    margin: 0px 0px 0px 180px;
+}
+
+.starts{
+	display:flex;
+	flex-direction: row;
+	color: #FFFFFF;
+	left: 190px;
+	height: 25px;
+	
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+.name {
+	position: absolute;
+	width: 88px;
+	left: 192px;
+	top: 405px;
+}
+
+.id {
+	position: absolute;
+	width: 136px;
+	left: 852px;
+	top: 405px;
+}
+
+.nametext {
+	position: absolute;
+	width: 400px;
+	height: 49px;
+	left: 190px;
+	top: 440px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.idtext {
+	position: absolute;
+	width: 400px;
+	height: 49px;
+	left: 850px;
+	top: 440px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.experience {
+	position: absolute;
+	width: 175px;
+	height: 25px;
+	left: 192px;
+	top: 541px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+.experienceQuestion {
+	position: absolute;
+	width: 362px;
+	height: 22px;
+	left: 192px;
+	top: 571px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #828282;
+}
+
+
+
+/* .star-cb-group {
+	remove inline-block whitespace
+	font-size: 0;
+	flip the order so we can use the + and ~ combinators
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	the hidden clearer
+}
+
+.star-cb-group * {
+	font-size: 1rem;
+	left: 0%;
+	right: 0%;
+	top: -3.12%;
+	bottom: 7.29%;
+}
+
+.star-cb-group>input {
+	display: none;
+}
+
+.star-cb-group>input+label {
+	only enough room for the star
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 9999px;
+	width: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.star-cb-group>input+label:before {
+	display: inline-block;
+	text-indent: -9999px;
+	content: "*";
+	color: #888;
+	height: 100%;
+	width: 100%;
+}
+
+.star-cb-group>input:checked ~ label:before, .star-cb-group>input+label:hover 
+	~ label:before, .star-cb-group>input+label:hover:before {
+	content: "*";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
+
+.star-cb-group>.star-cb-clear+label {
+	text-indent: -9999px;
+	width: 0.5em;
+	margin-left: -0.5em;
+}
+
+.star-cb-group>.star-cb-clear+label:before {
+	width: 0.5em;
+}
+
+.star-cb-group:hover>input+label:before {
+	content: "*";
+	color: #888;
+	text-shadow: none;
+}
+
+.star-cb-group:hover>input+label:hover ~ label:before, .star-cb-group:hover>input+label:hover:before
+	{
+	content: "*";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
+ */
+:root {
+	font-size: 2em;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+fieldset {
+	border: 0;
+	width: 5em;
+	border-radius: 1px;
+	padding: 1em 1.5em 0.9em;
+	margin: 1em auto;
+}
+
+.star-rating{
+	display:flex;
+	flex-direction: row-reverse;
+	position: absolute;
+    top: 575px;
+	margin: 0px 0px 0px 180px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+	  margin-top: 40px;
+  border: none;
+  float: left;
+}
+
+
+.star-rating {
+  margin-top: 40px;
+  border: none;
+  float: left;
+}
+
+.star-rating > label {
+  color: #90A0A3;
+  float: right;
+}
+
+.star-rating > label:before {
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  content: "\f005";
+  display: inline-block;
+}
+
+.star-rating > input {
+  display: none;
+}
+
+.star-rating > input:checked ~ label,
+.star-rating:not(:checked) > label:hover,
+.star-rating:not(:checked) > label:hover ~ label {
+  color: #F79426;
+}
+
+.star-rating > input:checked + label:hover,
+.star-rating > input:checked ~ label:hover,
+.star-rating > label:hover ~ input:checked ~ label,
+.star-rating > input:checked ~ label:hover ~ label {
+  color: #FECE31;
+}
+.rating{
+	display:flex;
+	flex-direction: row;
+	position: absolute;
+	top: 750px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.re1 {	
+	position: absolute;
+	left: 192px;	
+	width: 68px;
+	height: 49px;
+}
+
+.re1:focus {
+	background-color: #27AE60;
+}
+
+.re2 {
+	position: absolute;
+	left: 270px;
+	width: 68px;
+	height: 49px;
+}
+
+.re2:focus {
+	background-color: #27AE60;
+}
+
+.re3 {
+	position: absolute;
+	left: 348px;
+	width: 68px;
+	height: 49px;
+}
+
+.re3:focus {
+	background-color: #27AE60;
+}
+
+.re4 {
+	position: absolute;
+	left: 426px;
+	width: 68px;
+	height: 49px;
+}
+
+.re4:focus {
+	background: #27AE60;
+}
+
+.re5 {
+	position: absolute;
+	left: 504px;
+	width: 68px;
+	height: 49px;
+}
+
+.re5:focus {
+	background-color: #27AE60;
+}
+
+#unlike {
+	position: absolute;
+	width: 91px;
+	left: 194px;
+}
+
+#like{
+	position: absolute;
+	width: 73px;
+	left: 499px;
+}
+.like {
+	position: absolute;
+	height: 22px;
+	top: 790px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 22px;
+	color: #828282;
+}
+
+.suggestiontext {
+	position: absolute;
+	width: 1058px;
+	height: 126px;
+	left: 192px;
+	top: 900px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+	position: absolute;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 25px;
+	color: rgb(236, 144, 144);
+}
+
+.submit {
+	position: absolute;
+	width: 178px;
+	height: 49px;
+	left: 192px;
+	top: 1066px;
+	background: #F2F2F2;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+}
+
+#recommand {
+	position: absolute;
+	width: 646px;
+	top: 686px;
+}
+
+#suggest{
+	position: absolute;
+	width: 304px;
+	top: 851px;
+}
+.suggestion {
+	position: absolute;
+	height: 25px;
+	left: 194px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+.rate {
+	position: absolute;
+	left: 10%;
+	top: 89%;
+}
+
+.download {
+	position: absolute;
+	width: 384px;
+	height: 49px;
+	left: 190px;
+	top: 314px;
+	background: #F2F2F2;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	text-size: 200%;
+}
+
+.submit {
+	position: absolute;
+	width: 200px;
+	height: 49px;
+	left: 190px;
+	top: 1100px;
+	background: #F2F2F2;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+}
+
